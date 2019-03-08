@@ -1,0 +1,69 @@
+*{
+	padding : 0;
+	margin: 0;
+}
+a{
+	text-decoration: none;
+}
+li{
+	list-style: none;
+}
+.header{
+	height: 135px;
+	width: 100%;
+	#title{
+		height: 30px;
+		width: 100%;
+		background: #f7f7f7;
+		#titlemiddle{
+			width: 1300px;
+			height: 28px;
+			margin: 0 auto;
+			font-size: 12px;
+			margin-top: 2px;
+			#titlemiddleleft{
+				float: left;
+			}
+			#titlemiddleright{
+				float: right;
+				width: 520px;
+				height: 18px;
+				.titlemenu{
+					font: 12px/1.5 Arial,"宋体";
+					padding: 0 15px;
+					position: relative;
+					float: left;
+					a{
+						color: #79797b;
+						b{
+							position: absolute;
+							top:13px;
+							right: 0;
+							border: 5px solid;
+							border-color: #CCC transparent transparent;
+						}
+					}
+				}
+				#div05{
+					float: right;
+				}
+				#div06{
+					float: right;
+				}
+			}
+		}
+		.titlelogo{
+			width: 1300px;
+			height: 105px;
+			margin: 0 auto;
+			#titlelogotop{
+				padding-top: 25px;
+				#D1youshang{
+					background-image: url(../src/img/erweima2.jpg);
+					width: 170px;
+					height: 62px;
+				}
+			}
+		}
+	}
+}
