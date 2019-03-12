@@ -13,7 +13,7 @@
 			}
 			.anchor .anchormin .red{
 				color: white;
-				background: red;
+				background: firebrick;
 			}
 		</style>
 	</head>
@@ -122,7 +122,27 @@
 									购物车<em id="shopNum">0</em>件
 									<b></b>
 								</a>
-								<!-- 购物车二级选取框 -->
+								<div id="shopcar">
+									<table border="" cellspacing="0" cellpadding="">
+										<tr>
+											<td></td>
+											<td>您的购物车中暂无商品！！！</td>
+											<td></td>
+										</tr>
+									</table>
+									<div class="shopcarmenu">
+										<div style="float: left;">
+											<span id="">
+												购物车中有<em>0</em>件商品~
+											</span>
+											金额总计
+											<em>￥00.00</em>
+										</div>
+										<a href="" style="float: right; margin-right: 10px;">
+											<img src="src/img/viewcart.gif" style="vertical-align: middle;margin-bottom: 5px;" >
+										</a>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -276,7 +296,7 @@
 							<p style="text-align: center;">6秒沸腾速引机</p>
 							<span id="price">
 								<font size="3"  >会员价 ：</font>
-								<font  size="5" color="red">￥88</font>
+								<font  size="5" color="red">￥538</font>
 							</span>
 						</div>
 					</div>
@@ -287,7 +307,7 @@
 							<p style="text-align: center;">6秒沸腾速引机</p>
 							<span id="price">
 								<font size="3"  >会员价 ：</font>
-								<font  size="5" color="red">￥88</font>
+								<font  size="5" color="red">￥538</font>
 							</span>
 						</div>
 					</div>
@@ -298,7 +318,7 @@
 							<p style="text-align: center;">6秒沸腾速引机</p>
 							<span id="price">
 								<font size="3"  >会员价 ：</font>
-								<font  size="5" color="red">￥88</font>
+								<font  size="5" color="red">￥538</font>
 							</span>
 						</div>
 					</div>
@@ -309,7 +329,7 @@
 								<p style="text-align: center;">6秒沸腾速引机</p>
 								<span id="price">
 									<font size="3"  >会员价 ：</font>
-									<font  size="5" color="red">￥88</font>
+									<font  size="5" color="red">￥538</font>
 								</span>
 							</div>
 					</div>
@@ -378,10 +398,10 @@
 				<a href="javascript:;">
 					<div id="commodity2">
 						<div id="commodity21">
-							<p style="text-align: center;">音响+麦克风K歌神器</p>
+							<p style="text-align: center;">金稻蒸脸器充电型手持补水仪</p>
 							<span id="price">
 								<font size="3"  >会员价 ：</font>
-								<font  size="5" color="red">￥568</font>
+								<font  size="5" color="red">￥168</font>
 							</span>
 						</div>
 					</div>
@@ -389,10 +409,10 @@
 				<a href="javascript:;">
 					<div id="commodity2">
 						<div id="commodity21">
-							<p style="text-align: center;">音响+麦克风K歌神器</p>
+							<p style="text-align: center;">金稻蒸脸器充电型手持补水仪</p>
 							<span id="price">
 								<font size="3"  >会员价 ：</font>
-								<font  size="5" color="red">￥568</font>
+								<font  size="5" color="red">￥168</font>
 							</span>
 						</div>
 					</div>
@@ -403,10 +423,10 @@
 				<a href="javascript:;">
 					<div id="commodity2">
 						<div id="commodity21">
-							<p style="text-align: center;">音响+麦克风K歌神器</p>
+							<p style="text-align: center;">CLICK 立体防盗背包</p>
 							<span id="price">
 								<font size="3"  >会员价 ：</font>
-								<font  size="5" color="red">￥568</font>
+								<font  size="5" color="red">￥499</font>
 							</span>
 						</div>
 					</div>
@@ -414,10 +434,10 @@
 				<a href="javascript:;">
 					<div id="commodity2">
 						<div id="commodity21">
-							<p style="text-align: center;">音响+麦克风K歌神器</p>
+							<p style="text-align: center;">CLICK 立体防盗背包</p>
 							<span id="price">
 								<font size="3"  >会员价 ：</font>
-								<font  size="5" color="red">￥568</font>
+								<font  size="5" color="red">￥499</font>
 							</span>
 						</div>
 					</div>
@@ -425,10 +445,10 @@
 				<a href="javascript:;">
 					<div id="commodity2">
 						<div id="commodity21">
-							<p style="text-align: center;">音响+麦克风K歌神器</p>
+							<p style="text-align: center;">CLICK 立体防盗背包</p>
 							<span id="price">
 								<font size="3"  >会员价 ：</font>
-								<font  size="5" color="red">￥568</font>
+								<font  size="5" color="red">￥499</font>
 							</span>
 						</div>
 					</div>
@@ -515,30 +535,4 @@
 		</div>
 	</body>
 		<script type="text/javascript" src="dist/all.min.js"></script>
-		<script type="text/javascript">
-			//导航样式
-			(function(){
-				var $nav=$("#anchor"); //得到导航对象
-				var $win=$(window); //得到窗口对象
-				var $sc=$(document);//得到document文档对象
-				var $navs=$("#anchor a");
-				$win.scroll(function(){
-				  if($sc.scrollTop()>=605){ 
-				$nav.addClass("fixednav"); 
-			  }else{
-				$nav.removeClass("fixednav");
-			  } 
-			});
-				var	$obea;
-				$navs.click(function(){
-					if($obea !== undefined){
-						$obea.removeClass("red");
-					}
-				var $navsa = $(this).eq().prevObject;
-				$obea = $navsa.addClass("red");
-				
-			});
-			//随滚动条变换a标签选中的锚点变化;
-			})();
-		</script>
 </html>

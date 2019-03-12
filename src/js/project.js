@@ -78,3 +78,76 @@
 		$($price).animate({top : 380},500);	
 		});
 })();
+	(function(){
+				var $nav=$("#anchor"); //得到导航对象
+				var $win=$(window); //得到窗口对象
+				var $sc=$(document);//得到document文档对象
+				var $navs=$("#anchor a");
+				$win.scroll(function(){
+				  if($sc.scrollTop()>=580){
+				$nav.addClass("fixednav"); 
+			}else{
+				$nav.removeClass("fixednav");
+			}
+			if(0 <=$sc.scrollTop()<= 580){
+				$navs.eq(0).addClass("red");
+			}
+			if($sc.scrollTop()> 580){
+				$navs.eq(0).removeClass("red");
+			}
+			if(580 <$sc.scrollTop()<= 1800){
+				$navs.eq(1).addClass("red");
+			}
+			if($sc.scrollTop()> 1800  || $sc.scrollTop()< 580){
+				$navs.eq(1).removeClass("red");
+			}
+			if(1800 <$sc.scrollTop()<= 2900){
+				$navs.eq(2).addClass("red");
+			}
+			if($sc.scrollTop()> 2900 || $sc.scrollTop()< 1800){
+				$navs.eq(2).removeClass("red");
+			}
+			if(2900 <$sc.scrollTop()<= 4000){
+				$navs.eq(3).addClass("red");
+			}
+			if($sc.scrollTop()> 4000 || $sc.scrollTop()< 2900){
+				$navs.eq(3).removeClass("red");
+			}
+			if(4000 <$sc.scrollTop()<= 4600){
+				$navs.eq(4).addClass("red");
+			}
+			if($sc.scrollTop()> 4600 || $sc.scrollTop()< 4000){
+				$navs.eq(4).removeClass("red");
+			}
+			if(4600 <$sc.scrollTop()<= 5200){
+				$navs.eq(5).addClass("red");
+			}
+			if($sc.scrollTop()> 5200 || $sc.scrollTop()< 4600){
+				$navs.eq(5).removeClass("red");
+			}
+			if(5200 <$sc.scrollTop()){
+				$navs.eq(6).addClass("red");
+			}
+			if($sc.scrollTop()< 5200){
+				$navs.eq(6).removeClass("red");
+			}
+			});
+				$navs.click(function(){
+					var	$obea;
+					if($obea !== undefined){
+						$obea.removeClass("red");
+					}
+				var $navsa = $(this).eq().prevObject;
+				$obea = $navsa.addClass("red");
+			});
+			})();
+(function(){
+	var $shopcar = $(".shop");
+	var $shopcarlist = $("#shopcar");
+	$shopcar.hover(function(){
+		$shopcarlist.css("display","block");
+	});
+	$shopcar.mouseleave(function(){
+		$shopcarlist.css("display","none");
+	});
+})();

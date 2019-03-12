@@ -190,7 +190,7 @@ li{
 			}
 		}
 		.titlelogo{
-			width: 1300px;
+			width: 980px;
 			height: 105px;
 			margin: 0 auto;
 			#titlelogotop{
@@ -220,10 +220,9 @@ li{
 				}
 				.search{
 					float: left;
-					width: 390px;
+					width: 340px;
 					height: 42px;
-					padding-left: 40px;
-					padding-top: 15px;
+					padding-top: 20px;
 					#search1{
 						float: left;
 						width: 250px;
@@ -237,7 +236,7 @@ li{
 						background: #f0414e;
 						color:white;
 						text-align: center;
-						line-height: 40px;
+						line-height: 36px;
 					}
 				}
 				.shop{
@@ -247,7 +246,6 @@ li{
 					background-image: url(../src/img/erweima2.jpg);
 					background-position: 0 -274px;
 					margin-top: 20px;
-					margin-left: 10px;
 					.shopmassage{
 						padding: 6px 0px 0 50px;
 						a{
@@ -280,7 +278,6 @@ li{
 								border: none;
 								tr{
 									td{
-									
 									border: none;
 									}
 									td:nth-child(1){
@@ -313,7 +310,6 @@ li{
 									padding: 0 10px;
 								}
 							}
-							
 						}
 					}
 				}
@@ -321,348 +317,96 @@ li{
 		}
 	}
 }
-.carousel{
-	overflow: hidden;
-	height: 400px;
-	width: 100%;
-	position: relative;
-	.carousel1{
-		position: absolute;
-		margin: 0 auto;
-		height: 400px;
-		width: 1920px;
-		background-image: url(../src/img/01904543_1920.jpg);
-	}
-	.carousel2{
-		position: absolute;
-		margin: 0 auto;
-		height: 400px;
-		width: 1920px;
-		background-image: url(../src/img/01207616_1920.jpg);
-	
-	}
-	.carousel3{
-		position: absolute;
-		margin: 0 auto;
-		height: 400px;
-		width: 1920px;
-		background-image: url(../src/img/01207624_1920.jpg);
-	}
-	.carousel4{
-		position: absolute;
-		margin: 0 auto;
-		height: 400px;
-		width: 1920px;
-		background-image: url(../src/img/08100403_1920.jpg);
-	}
-	.carouselsize1{
-		position: relative;
-		display: block;
-		font-size: 12px;
-		height: 20px;
-		width: 20px;
-		color: #fff;
-		top: 360px;
-		left: 640px;
-		background: #000000;
-		line-height: 20px;
-		text-align: center;
-		border-radius: 50%;
-	}
-	.carouselsize2{
-		position: relative;
-		font-size: 12px;
-		height: 20px;
-		width: 20px;
-		display: block;
-		color: #fff;
-		top: 340px;
-		left: 680px;
-		background: #000000;
-		line-height: 20px;
-		text-align: center;
-		border-radius: 50%;
-	}
-	.carouselsize3{
-		position: relative;
-		font-size: 12px;
-		height: 20px;
-		width: 20px;
-		display: block;
-		color: #fff;
-		top: 320px;
-		left: 720px;
-		background: #000000;
-		line-height: 20px;
-		text-align: center;
-		border-radius: 50%;
-	}
-	.carouselsize4{
-		position: relative;
-		font-size: 12px;
-		height: 20px;
-		width: 20px;
-		display: block;
-		color: #fff;
-		top: 300px;
-		left: 760px;
-		background: #000000;
-		line-height: 20px;
-		text-align: center;
-		border-radius: 50%;
-	}
-	#circle222{
-		z-index: 5000;
-		width: 25px;
-		height: 41px;
-		overflow: hidden;
-		#carouselleft{
-			display: block;
-			width: 25px;
-			height: 41px;
-			position: absolute;
-			z-index: 5000;
-			background-image: url(../src/img/white-left.png);
-			top:200px;
-			left: 50px;
-		}
-		#carouselright{
-			width: 25px;
-			height: 41px;
-			position: absolute;
-			z-index: 5000;
-			background-image: url(../src/img/white-right.png);
-			top:200px;
-			left: 1340px;
-		}
-	}
+
+#maxmenu{
+	width: 980px;
+	height: 38px;
+	border: 1px solid #CCC;
+	margin: 0 auto;
+	#maxmenu1{
+		width: 500px;
+		height: 38px;
 		p{
-			.carouselsize1:hover{
-				background:red;
-			}
-			.carouselsize2:hover{
-				background:red;
-			}
-			.carouselsize3:hover{
-				background:red;
-			}
-			.carouselsize4:hover{
-				background:red;
-			}
-		}
-}
-.anchor{
-	height: 60px;
-	width: 100%;
-	background: #ececec;
-	position: absolute;
-	//background: #f6f6f6;
-	.anchormin{
-		width:1170px;
-		height: 60px;
-		margin: 0 auto;
-		a{
 			float: left;
-			display: block;
-			width: 166px;
-			height: 30px;
-			text-align: center;
-			line-height: 30px;
-			margin-top: 15px;
-			color: #000000;
+			font-size: 12px;
+			height: 38px;
+			line-height: 38px;
+			padding: 0 5px;
 		}
-		a:hover{
-			color:#ccc;
+		#baihuo{
+			box-sizing: border-box;
+			float: left;
+			font-size: 12px;
+			height: 36px;
+			width: 100px;
+			line-height: 38px;
+			padding: 0 2px;
+			.xiaobaihuo{
+				padding-right: 30px;
+			}
+			#card{
+				display: none;
+				a:hover{
+					color:red;
+				}
+			
+			}
+			
+			b{
+				position: absolute;
+				top:156px;
+				left: 400px;
+				border: 5px solid;
+				border-color: black transparent transparent;
+			}
+			i{
+				position: absolute;
+				top:151px;
+				left: 400px;
+				border: 5px solid;
+				border-color: transparent transparent black;
+				display: none;
+			}
+			#card{
+				    position: absolute;
+					top: 174px;
+					left: 325px;
+					border: 1px solid #cc0033;
+					background: #fff;
+					padding: 5px;
+					width: 360px;
+					z-index: 1000;
+					a{
+						padding-right: 80px;
+					}
+			}
 		}
+		#baihuo:hover #card{
+			display: block;	
+		}
+	}
+	#maxmenu1 p:hover a{
+		color:red;
+	}
+	#maxmenu1 #baihuo:hover .xiaobaihuo{
+		color:red;
+		border: 1px solid red;
 	}
 }
-.commodity{
-	overflow: hidden;
-	margin-top: 60px;
-	width: 100%;
-	background: #f6f6f6;
-	#list0{
-		overflow: hidden;
-		width: 1200px;
-		margin: 0 auto;
-		#commodity1{
-			float: left;
-			width: 556px;
-			height: 338px;
-			background: #fff url(../src/img/01207539_d1_1116.jpg) no-repeat;
-			margin: 15px 20px;
-			p{
-				font-size: 18px;
-				font-weight: bolder;
-				position: relative;
-				top: 300px;
-				left:200px;
-			}
-		}
-		#commodity1:hover p{
-			color:red;
-		}
-	}
-	#list1{
-		overflow: hidden;
-		width: 1200px;
-		margin: 0 auto;
-		#commodity2{
-			float: left;
-			width: 370px;
-			height: 440px;
-			background: #fff url(../src/img/0120740720170620165649_1_400.jpg) no-repeat;
-			margin: 20px 15px;
-			overflow: hidden;
-			#commodity21{
-				position: relative;
-				overflow: hidden;
-				background: #fff;
-				width: 370px;
-				height: 140px;
-				top: 380px;
-				p{
-					margin: 20px 0 30px 0;
-					font-size: 18px;
-					
-				}
-				#price{
-					margin-left:120px; 
-				}
-			}
-		}
-		#commodity2:hover{
-			color:red;
-			}
-	}
-	#list2{
-		overflow: hidden;
-		width: 1200px;
-		margin: 0 auto;
-		#commodity2{
-			float: left;
-			width: 370px;
-			height: 440px;
-			background: #fff url(../src/img/0120747120170803174138_1_400.jpg) no-repeat;
-			margin: 20px 15px;
-			overflow: hidden;
-			#commodity21{
-				position: relative;
-				overflow: hidden;
-				background: #fff;
-				width: 370px;
-				height: 140px;
-				top: 380px;
-				p{
-					margin: 20px 0 30px 0;
-					font-size: 18px;
-					
-				}
-				#price{
-					margin-left:120px; 
-				}
-			}
-		}
-		#commodity2:hover{
-			color:red;
-			}
-	}
-	#list3{
-		overflow: hidden;
-		width: 1200px;
-		margin: 0 auto;
-		#commodity2{
-			float: left;
-			width: 370px;
-			height: 440px;
-			background: #fff url(../src/img/0810032120170615140914_1_400.jpg) no-repeat;
-			margin: 20px 15px;
-			overflow: hidden;
-			#commodity21{
-				position: relative;
-				overflow: hidden;
-				background: #fff;
-				width: 370px;
-				height: 140px;
-				top: 380px;
-				p{
-					margin: 20px 0 30px 0;
-					font-size: 18px;
-					
-				}
-				#price{
-					margin-left:120px; 
-				}
-			}
-		}
-		#commodity2:hover{
-			color:red;
-			}
-	}
-	#list4{
-		overflow: hidden;
-		width: 1200px;
-		margin: 0 auto;
-		#commodity2{
-			float: left;
-			width: 370px;
-			height: 440px;
-			background: #fff url(../src/img/0142695220160830110614_1_400.jpg) no-repeat;
-			margin: 20px 15px;
-			overflow: hidden;
-			#commodity21{
-				position: relative;
-				overflow: hidden;
-				background: #fff;
-				width: 370px;
-				height: 140px;
-				top: 380px;
-				p{
-					margin: 20px 0 30px 0;
-					font-size: 18px;
-					
-				}
-				#price{
-					margin-left:120px; 
-				}
-			}
-		}
-		#commodity2:hover{
-			color:red;
-			}
-	}
-	#list5{
-		overflow: hidden;
-		width: 1200px;
-		margin: 0 auto;
-		#commodity2{
-			float: left;
-			width: 370px;
-			height: 440px;
-			background: #fff url(../src/img/0190436420170327183118_1_400.jpg) no-repeat;
-			margin: 20px 15px;
-			overflow: hidden;
-			#commodity21{
-				position: relative;
-				overflow: hidden;
-				background: #fff;
-				width: 370px;
-				height: 140px;
-				top: 380px;
-				p{
-					margin: 20px 0 30px 0;
-					font-size: 18px;
-					
-				}
-				#price{
-					margin-left:120px; 
-				}
-			}
-		}
-		#commodity2:hover{
-			color:red;
-			}
-	}
+.chooselist{
+	width: 980px;
+	height: 43px;
+	border:1px solid #f0f0f0;
+	margin: 0 auto;
+}
+#chooselist1{
+	margin-top: 20px;
+}
+#chooselist2{
+	border-top: transparent;
+}
+#chooselist3{
+	border-top: transparent;
 }
 .footer{
 	overflow: hidden;
@@ -776,5 +520,4 @@ li{
 			text-align: center;
 		}
 	}
-	
 }
