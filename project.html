@@ -2,13 +2,22 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta http-equiv="X-UA-Compatible" content="ie=edge">
 		<title></title>
 		<link rel="stylesheet" type="text/css" href="dist/homepage.min.css"/>
-		<script type="text/javascript" src="src/js/jquery-1.11.3.js"></script>
-		
+		<style type="text/css">
+			.fixednav{
+				position:fixed;
+				top:0px;
+				left:0px;
+				z-index: 9999;
+			}
+			.anchor .anchormin .red{
+				color: white;
+				background: red;
+			}
+		</style>
 	</head>
+	
 	<body>
 		<div class="header">
 			<div id="title">
@@ -26,12 +35,11 @@
 							<li class="titlemenu" id="div04">
 								<a href="" id="secondtitle">我的账户<b></b></a>
 									<ul id="nav">
-										<li><a href="">我的订单</a></li>
-										<li><a href="">我的优惠卷</a></li>
-										<li><a href="">我的积分</a></li>
-										<li><a href="">我的收藏</a></li>
-										<li><a href="">我的晒单</a></li>
-										<li><a href="">我的评论</a></li>
+										<li><a id="menulist" href="">我的优惠卷</a></li>
+										<li><a id="menulist" href="">我的积分</a></li>
+										<li><a id="menulist" href="">我的收藏</a></li>
+										<li><a id="menulist" href="">我的晒单</a></li>
+										<li><a id="menulist" href="">我的评论</a></li>
 									</ul>
 							</li>
 							<li class="titlemenu">
@@ -121,7 +129,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="carousel">
+		<div class="carousel" id="carousel">
 			<!-- 轮播 -->
 			<a href="javascript:;">
 				<div class="carousel1"></div>
@@ -135,14 +143,14 @@
 			<a href="javascript:;">
 				<div class="carousel4"></div>
 			</a>
-			<p>
+			<p id="circle1">
 				<a href="javascript:;" class="carouselsize1">1</a>
 				<a href="javascript:;" class="carouselsize2">2</a>
 				<a href="javascript:;" class="carouselsize3">3</a>
 				<a href="javascript:;" class="carouselsize4">4</a>
 			</p>
-			<a href="javascript:;"><div id="carouselleft"></div></a>
-			<a href="javascript:;"><div id="carouselright"></div></a>
+			<a href="javascript:;" id="circle222"><span id="carouselleft"></span></a>
+			<a href="javascript:;" id="circle222"><span id="carouselright"></span></a>
 		</div>
 		<div class="anchor" id="anchor">
 			<div class="anchormin">
@@ -190,6 +198,7 @@
 					</div>
 				</a>
 			</div>
+			<!-- 需要给每个div加遮罩，而且要将下面的价格显示出来！！！ -->
 			<div id="list1">
 				<img src="src/img/home-banner-zt-h2.jpg">
 				<a href="javascript:;">
@@ -505,4 +514,31 @@
 			
 		</div>
 	</body>
+		<script type="text/javascript" src="dist/all.min.js"></script>
+		<script type="text/javascript">
+			//导航样式
+			(function(){
+				var $nav=$("#anchor"); //得到导航对象
+				var $win=$(window); //得到窗口对象
+				var $sc=$(document);//得到document文档对象
+				var $navs=$("#anchor a");
+				$win.scroll(function(){
+				  if($sc.scrollTop()>=605){ 
+				$nav.addClass("fixednav"); 
+			  }else{
+				$nav.removeClass("fixednav");
+			  } 
+			});
+				var	$obea;
+				$navs.click(function(){
+					if($obea !== undefined){
+						$obea.removeClass("red");
+					}
+				var $navsa = $(this).eq().prevObject;
+				$obea = $navsa.addClass("red");
+				
+			});
+			//随滚动条变换a标签选中的锚点变化;
+			})();
+		</script>
 </html>
