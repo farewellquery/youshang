@@ -1,4 +1,4 @@
-
+//轮播，划上，点击按钮
 (function(){
             var $box = $("#carousel"),
                 $picLi = $("#carousel a div"),
@@ -58,12 +58,12 @@
                 $tabLi.eq(first).addClass("on");
             }
         })();
-		
+//商品列表的遮罩和下面的div上移
 (function(){
 	var $commodity2 = $("* #commodity2"),
 		$commodity21 = $("* #commodity21");
 		$commodity2.mouseenter(function () {
-		var $index = $(this).eq();
+		var $index = $(this).eq(0);
 		$goods = $index.prevObject;
 		$price = $goods[0].children[0];
  		console.log($price);
@@ -78,6 +78,7 @@
 		$($price).animate({top : 380},500);	
 		});
 })();
+//导航的各种功能
 	(function(){
 				var $nav=$("#anchor"); //得到导航对象
 				var $win=$(window); //得到窗口对象

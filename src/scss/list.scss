@@ -332,6 +332,9 @@ li{
 			height: 38px;
 			line-height: 38px;
 			padding: 0 5px;
+			a{
+				color:black;
+			}
 		}
 		#baihuo{
 			box-sizing: border-box;
@@ -343,6 +346,8 @@ li{
 			padding: 0 2px;
 			.xiaobaihuo{
 				padding-right: 30px;
+				color: black;
+				width: 100px;
 			}
 			#card{
 				display: none;
@@ -364,7 +369,7 @@ li{
 				top:151px;
 				left: 400px;
 				border: 5px solid;
-				border-color: transparent transparent black;
+				border-color: transparent transparent red;
 				display: none;
 			}
 			#card{
@@ -398,6 +403,36 @@ li{
 	height: 43px;
 	border:1px solid #f0f0f0;
 	margin: 0 auto;
+	dt{
+		float: left;
+		height: 32px;
+		width: 87px;
+		border-right:1px solid #CCC;
+		margin: 6px 0;
+		font-size: 12px;
+		line-height: 32px;
+		text-align: center;
+		color: #999;
+		a{
+			color:#4b4b4b;
+		}
+	}
+	dd{
+		float: left;
+		height: 32px;
+		width: 68px;
+		margin: 6px 0;
+		font-size: 12px;
+		line-height: 32px;
+		text-align: center;
+		color: #999;
+		a{
+			color:#4b4b4b;
+		}
+		a:hover{
+			color:red;
+		}
+	}
 }
 #chooselist1{
 	margin-top: 20px;
@@ -407,6 +442,182 @@ li{
 }
 #chooselist3{
 	border-top: transparent;
+}
+#goodlist{
+	width: 980px;
+	margin: 0 auto;
+	margin-top: 20px;
+	#goodlistmenu{
+		height: 35px;
+		width: 980px;
+		border:1px solid #CCC;
+		border-top: 2px solid black;
+		li{
+			float: left;
+			height: 35px;
+			width: 86px;
+			line-height: 35px;
+			text-align: center;
+			border-right: 1px solid #999;
+		}
+		.jiantou{
+			background: url(../src/img/downarrow-grey.gif) no-repeat;
+			background-position: 62px 15px;
+		}
+		.jiantouchange{
+			background: url(../src/img/downarrow-red.gif) no-repeat;
+			background-position: 62px 15px;
+		}
+		.shuangjiantou{
+			background: url(../src/img/prizearrow-du.gif) no-repeat;
+			background-position: 62px 15px;
+		}
+		#goodlistprice{
+			margin-top: 11px;
+			float: left;
+			width: 300px;
+			height: 16px;
+			font-size: 12px;
+			color:#000;
+			#empty{
+				float: left;
+				width:80px;
+				height: 16px;
+				text-align: center;
+			}
+		}
+		#goodlistpricechoose{
+			float: right;
+			width: 70px;
+			height: 35px;
+			#goodlistpricechoose1{
+				font-size: 12px;
+				position: relative;
+				top:3px;
+				left:0px;
+			}
+			a{
+				position: relative;
+				top:8px;
+				left:5px;
+			}
+		}
+		li:hover a{
+			color:red;
+		}
+	}
+	#goodlistmessage{
+		width: 980px;
+		margin: 0 auto;
+		margin-top: 10px;
+		li{
+			float: left;
+			width: 243px;
+			height: 370px;
+			border:1px solid rgb(255, 255, 255);
+			#goodbox{
+				width: 214px;
+				height: 339px;
+				margin-left: 15px;
+				#goodboxpic{
+					text-align: center;
+				}
+				#goodboxprice{
+					
+					#goodboxprice1{
+						color:red;
+						font-weight: bold;
+					}
+					#goodboxprice2{
+						font-size: 12px;
+					}
+				}
+				#goodlink{
+					width: 214px;
+					height: 63px;
+					padding-top: 10px;
+					line-height: 20px;
+					font-size: 12px;
+					a{
+						color: #000;
+					}
+					a:hover{
+						color:red;
+					}
+					#goodchat{
+						display: block;
+						background: url(../src/img/criticsicon.gif) no-repeat;
+						padding-left: 18px;
+						background-position-y: 4px; 
+						a:hover{
+							color:red;
+						}
+					}
+				}
+				#goodfoot{
+					
+					#needname{
+						float:left;
+						width: 42px;
+						height: 28px;
+					}
+				}
+				#updowm{
+					margin-left: 5px;
+					width: 16px;
+					height: 28px;
+					float: left;
+					a{
+						display: block;
+						width: 16px;
+						height: 14px;
+					}
+					#updowmup{
+						position: relative;
+						top: -4px;
+					}
+				}
+				#addpic{
+					float: left;
+					margin-left: 20px;
+				}
+			}
+		}
+	}
+	#goodlistmessageNum{
+		float: left;
+		width: 980px;
+		height: 40px;
+		text-align: center;
+		font-size: 12px;
+		padding-left: 250px;
+		span{
+			float: left;
+			height: 24px;
+			width: 130px;
+			line-height: 24px;
+		}
+		.curr{
+			float: left;
+			height: 24px;
+			width: 5px;
+			line-height: 24px;
+			margin: 0 10px 0 5px;
+		}
+		a{
+			float: left;
+			display: block;
+			margin: 0 5px;
+			width: 24px;
+			height: 24px;
+			border: 1px solid #A4A4A4;
+			line-height: 24px;
+			background-image: url(../src/img/pgbg.gif);
+		}
+		a:nth-child(8){
+			width: 54px;
+		}
+	}
 }
 .footer{
 	overflow: hidden;
